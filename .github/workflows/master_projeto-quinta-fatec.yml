@@ -25,13 +25,6 @@ jobs:
         uses: docker/login-action@v2
         with:
           registry: docker.io
-          username: luis335  
-          password: ${{ secrets.AZUREAPPSERVICE_CONTAINERPASSWORD_15BC6087D0F24E7FA65A17875CB526A9 }}
-
-      - name: Log in to container registry
-        uses: docker/login-action@v2
-        with:
-          registry: docker.io
           username: luis335  # COLOQUE SEU USUÁRIO DO DOCKER HUB AQUI (TUDO MINÚSCULO)
           password: ${{ secrets.AZUREAPPSERVICE_CONTAINERPASSWORD_15BC6087D0F24E7FA65A17875CB526A9 }}
 
